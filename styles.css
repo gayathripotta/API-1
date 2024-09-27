@@ -1,0 +1,108 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('your-image-url.jpg'); /* Add your background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    color: #333; /* Dark grey text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 64, 128, 0.9); /* Semi-transparent dark blue background */
+    color: #fff; /* White text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffcc00; /* Yellow for title to pop */
+}
+
+#news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.news-card {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc; /* Light border around cards */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.news-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #004080; /* Border around the image */
+}
+
+.news-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333; /* Dark grey for the title */
+}
+
+.news-card p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: #666; /* Slightly lighter text for descriptions */
+}
+
+.news-card a {
+    text-decoration: none;
+    color: #007bff; /* Blue links */
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+    color: #004080; /* Darker blue on hover */
+}
+
+footer {
+    background: #004080; /* Consistent dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    #news-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .news-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
